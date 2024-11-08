@@ -25,7 +25,6 @@ project-root/
 │   ├── routes/                 # API routes
 │   └── utils/
 │       └── dialogflow_utils.py # Helper functions for Dialogflow
-├── db/                         # MySQL database dump
 ├── dialogflow_assets/          # Dialogflow intents, entities, and contexts
 ├── frontend/                   # Website frontend code
 └── README.md
