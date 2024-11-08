@@ -1,10 +1,9 @@
-# ML_project
 # 🤖 AI Chatbot for Food Delivery System using Dialogflow, Python, and FastAPI
 
 ## 📌 Project Overview
-In this project, we have built an **AI-powered chatbot** designed to handle food delivery orders. The chatbot uses **Dialogflow** for natural language understanding (NLU) to recognize user intents and extract relevant entities. We have integrated a backend using **Python (FastAPI)** and a **MySQL database** to store user data and order details.
+This project involves building an **AI-powered chatbot** designed to handle food delivery orders. The chatbot leverages **Dialogflow** for natural language understanding (NLU) to recognize user intents and extract relevant entities. The backend is developed using **Python (FastAPI)** and a **MySQL database** to store user data and order details.
 
-This project demonstrates the use of **AI agent techniques**, including:
+The project demonstrates the use of **AI agent techniques**, including:
 - **Natural Language Processing (NLP)** for understanding and responding to user queries.
 - **Context management** to handle conversations smoothly.
 - **Autonomous decision-making** for recommending food items based on user preferences.
@@ -13,8 +12,8 @@ This project demonstrates the use of **AI agent techniques**, including:
 - **Conversational AI**: Uses Dialogflow to interpret user inputs and respond intelligently.
 - **Contextual Understanding**: Utilizes Dialogflow contexts to manage conversation flow and track user sessions.
 - **Backend API**: Built with FastAPI to handle interactions between the chatbot and the database.
-- **Database Integration**: MySQL database to store order history, user preferences, and more.
-- **AI Agent Techniques**: Uses NLP and autonomous decision-making to enhance user interactions.
+- **Database Integration**: MySQL database is used to store order history, user preferences, and more.
+- **AI Agent Techniques**: Leverages NLP and autonomous decision-making to enhance user interactions.
 
 ## 🗂 Directory Structure
 ```
@@ -46,7 +45,7 @@ source venv/bin/activate    # On Windows: venv\Scripts\activate
 ```bash
 pip install -r backend/requirements.txt
 ```
-Alternatively, install the key modules manually:
+Alternatively, install the required modules manually:
 ```bash
 pip install mysql-connector
 pip install "fastapi[all]"
@@ -58,13 +57,13 @@ cd backend
 uvicorn main:app --reload
 ```
 
-### Expose the local server using ngrok (for HTTPS)
+### Exposing the Local Server using ngrok (for HTTPS)
 - Download [ngrok](https://ngrok.com/download) and extract it.
 - Run the following command:
 ```bash
 ngrok http 8000
 ```
-Use the HTTPS URL provided by ngrok to integrate with Dialogflow.
+The HTTPS URL provided by ngrok can be used to integrate with Dialogflow.
 
 ## 💡 Dialogflow Setup
 
@@ -77,7 +76,7 @@ Use the HTTPS URL provided by ngrok to integrate with Dialogflow.
    - **Entities**: Extract information such as `FoodItem`, `Quantity`, and `Location`.
 
 3. **Contexts**:
-   - Use contexts to maintain conversation state and handle follow-up queries.
+   - Contexts are used to maintain conversation state and handle follow-up queries.
 
 ## 📡 API Endpoints
 | Method | Endpoint               | Description                     |
@@ -119,5 +118,5 @@ DATABASE_CONFIG = {
 ```
 
 ## 🤖 Example Interactions
-**User**: "I want to order a pizza"
-   - **Bot**: "What size would you like? Small, Medium, or Large?"
+**User**: "I want to order a pizza"  
+**Bot**: "What size would you like? Small, Medium, or Large?"
